@@ -29,7 +29,6 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
         // const response = await fetch('http://localhost:3001/api/image', {
           method: 'POST',
           body: formData,
-          mode: 'no-cors',
         });
 
         console.log('response:::>', response)
