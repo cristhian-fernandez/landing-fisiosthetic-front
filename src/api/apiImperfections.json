@@ -1,0 +1,30 @@
+{
+  "data" : {
+      "imperfections": [
+          {
+              "idImperfection": 1,
+              "name": "Acne",
+              "fullName": "Acné",
+              "urlImagen": "",
+              "description": "",
+              "active": true
+          },
+          {
+              "idImperfection": 2,
+              "name": "Manchas",
+              "fullName": "Manchas",
+              "description": "",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idImperfection": 3,
+              "name": "Arrugas",
+              "fullName": "Arrugas",
+              "description": "",
+              "urlImagen": "",
+              "active": true
+          }
+      ]
+  }
+}

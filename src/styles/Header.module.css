@@ -1,0 +1,28 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: var(--body-padding-left);
+  padding-right: var(--body-padding-right);
+  background-color: var(--white-color);
+}
+picture{
+  width: 150px;
+}
+
+picture img{
+  width: 100%;
+}
+
+@media only screen and (min-width: 950px) {
+  picture{
+    width: 180px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  picture{
+    width: 200px;
+  }
+}

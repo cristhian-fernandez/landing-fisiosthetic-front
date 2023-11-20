@@ -1,0 +1,71 @@
+.banner{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./../assets/images/background_banner.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: calc(var(--body-padding-left) + 10px);
+  padding-right: calc(var(--body-padding-right) + 10px);
+  text-align: center;
+}
+
+.banner_subtitle {
+  margin-bottom: 10px;
+  font-family: var(--body-font);
+  font-size: var(--h3-font-size);
+  
+}
+.banner_description {
+  margin-bottom: 20px;
+}
+.banner_button {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 650px) {
+  .banner{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 340px;
+    background-image: url('./../assets/images/image_banner.jpg');
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .banner_subtitle,
+  .banner_description {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .banner{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 360px;
+  }
+  .banner_subtitle,
+  .banner_description {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .banner{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 380px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner{
+    /* border: 2px solid orange; */
+    width: 100%;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+
+}

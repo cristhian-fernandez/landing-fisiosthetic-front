@@ -1,0 +1,30 @@
+{
+  "data" : {
+      "treatments": [
+          {
+              "idTreatment": 1,
+              "name": "peelings_quimicos",
+              "fullName": "Peelings Químicos",
+              "urlImagen": "",
+              "description": "",
+              "active": true
+          },
+          {
+              "idTreatment": 2,
+              "name": "Manchas",
+              "fullName": "Manchas",
+              "description": "",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 3,
+              "name": "Arrugas",
+              "fullName": "Arrugas",
+              "description": "",
+              "urlImagen": "",
+              "active": true
+          }
+      ]
+  }
+}
