@@ -25,10 +25,11 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
 
       try {
         setLoading(true)
-        const response = await fetch('https://apirest-teachable-machine-jgfh2nl7k-cristhian-fernandez.vercel.app/api/image', {
+        const response = await fetch('https://apirest-teachable-machine-ijzq80ede-cristhian-fernandez.vercel.app/api/image', {
         // const response = await fetch('http://localhost:3001/api/image', {
           method: 'POST',
           body: formData,
+          credentials: 'include',
         });
 
         console.log('response:::>', response)
