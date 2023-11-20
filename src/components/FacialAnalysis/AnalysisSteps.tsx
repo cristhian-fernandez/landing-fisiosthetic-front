@@ -29,6 +29,7 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
         // const response = await fetch('http://localhost:3001/api/image', {
           method: 'POST',
           body: formData,
+          credentials: 'include',
         });
 
         console.log('response:::>', response)
@@ -52,7 +53,7 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
 
   return (
     <div>
-      <p className={styles.title}>Prepárate para empezar el análisis de piel</p>
+      <p className={styles.title}>Prepárate para empezar el análisis de piel:</p>
       <p className={styles.subtitle}>Instrucciones para subir tu foto</p>
       <div className={styles.steps}>
         <div className={styles.step_list}>
