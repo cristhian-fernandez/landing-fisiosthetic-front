@@ -1,0 +1,46 @@
+{
+  "data" : {
+      "offices": [
+          {
+              "idOffice": 1,
+              "urlImagen": "/assets/images/sede01_fisiosthetic.jpg",
+              "description": "",
+              "address": "Ca. Francisco Cabrera 682, Segundo Piso",
+              "horary": [
+                "L-S: 09:00 a 13:00 hrs",
+                "L-S: 14:00 a 20:00 hrs"
+              ],
+              "phone": "074 - 268290",
+              "cellphone": "926207451",
+              "active": true
+          },
+          {
+              "idOffice": 2,
+              "urlImagen": "/assets/images/sede02_fisiosthetic.jpg",
+              "description": "",
+              "address": "Ca. Las Begonias 106 Urb. Los Parques",
+              "horary": [
+                "L-S: 09:00 a 13:00 hrs",
+                "L-S: 14:00 a 20:00 hrs"
+              ],
+              "phone": "947311913",
+              "cellphone": "960563513",
+              "active": true
+          },
+          {
+              "idOffice": 3,
+              "urlImagen": "/assets/images/sede03_fisiosthetic.jpg",
+              "description": "",
+              "address": "Ca. Cristóbal Colón 141, Primer Piso",
+              "horary": [
+                "L-S: 09:00 a 13:00 hrs",
+                "L-S: 14:00 a 20:00 hrs"
+              ],
+              "phone": "074 - 212115",
+              "cellphone": "950984781",
+              "active": true
+          }
+
+      ]
+  }
+}

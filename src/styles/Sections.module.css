@@ -1,0 +1,62 @@
+.sections{
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sections h1{
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.instruction{
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.instruction img {
+  width: 50px;
+  margin-right: 5px;
+}
+
+.instructions{
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 650px) {
+  .instruction{
+    width: 45%;
+    margin: 10px;
+  }
+  .instructions{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+}
+@media only screen and (min-width: 950px) {
+  .instruction{
+    width: 22%;
+  }
+  .instructions{
+    width: 900px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .instructions{
+    width: 1000px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+
+}

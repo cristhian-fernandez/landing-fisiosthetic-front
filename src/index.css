@@ -58,6 +58,7 @@ html {
   --section-light-bg: rgba(130,51,255,.15);
   --dark-bg: #212e36;
   --banner-bg: #070e27;
+  --section-bg: rgba(47, 179, 177, 0.3);
   
   --border-radius: 0.5rem;
   --form-border-radius:  0.25rem;
@@ -203,7 +204,10 @@ code {
     --bigger-font-size: 2rem;
     --body-padding-left: 30px;
     --body-padding-right: 30px;
-    --normal-font-size: 1rem;
+    --normal-font-size: 0.8rem;
+  }
+  h1{
+    font-size: var(--h2-font-size);
   }
 }
 @media only screen and (min-width: 650px) {
@@ -211,6 +215,7 @@ code {
     --bigger-font-size: 2.2rem;
     --body-padding-left: 50px;
     --body-padding-right: 50px;
+    --normal-font-size: 1rem;
   }
 }
 @media only screen and (min-width: 950px) {

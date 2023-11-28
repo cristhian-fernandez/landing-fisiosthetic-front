@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface GetDispatchAction {
   type: string;
   payload: any;
 }
 
 export interface actionProps {
-  type: 'GET_IMPERFECTIONS' | 'GET_TREATMENTS'
+  type: 'GET_IMPERFECTIONS' | 'GET_TREATMENTS' | 'GET_OFFICES'
   payload: any
 }
 
@@ -75,4 +74,9 @@ export interface AnalysisResultProps {
 export interface PercentagePrediction {
   class: string;
   percentage: number;
+}
+export interface IconProps {
+  fill?: string;
+  translateY?: number;
+  style?: any;
 }

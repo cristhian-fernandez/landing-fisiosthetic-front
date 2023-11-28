@@ -18,13 +18,6 @@
   background-color: var(--button-color-hover);
 }
 
-@media only screen and (min-width: 601px) {
-}
-@media only screen and (min-width: 950px) {
-}
-@media only screen and (min-width: 1200px) {
-}
-
 .button_border {
   display: inline-block;
   position: relative;
@@ -45,7 +38,7 @@
 .button_call {
   background-color: var(--second-color);
   padding: 8px 25px 16px 25px;
-  font-size: var(--h4-font-size);
+  font-size: var(--small-font-size);
   border: 0;
   border-radius: var(--border-radius);
   color: var(--white-color);
@@ -64,4 +57,14 @@
 .button_border:hover .button_call{
   padding: 10px 25px 14px 25px;
   background-color: var(--second-color-hover);
+}
+
+@media only screen and (min-width: 600px) {
+  .button_call {
+    font-size: var(--h4-font-size);
+  }
+}
+@media only screen and (min-width: 950px) {
+}
+@media only screen and (min-width: 1200px) {
 }
