@@ -35,7 +35,36 @@ export const config: any = {
             "iconName": "icon-look-straight",
             "description": "Mira fijamente a la cámara y mantén tu cara en el círculo."
           }
-        ]
+        ],
+        "Benefits":[
+          {
+            "title":"Diagnóstico instantáneo",
+            "description": "Obtén un análisis facial en tiempo real al cargar tu foto y descubre de inmediato esas pequeñas imperfecciones."
+          },
+          {
+            "title":"Tratamientos Personalizados",
+            "description": "Recibe recomendaciones de tratamientos adaptados a tu tipo de piel y descubre soluciones específicas, para tu cuidado facial."
+          },
+          {
+            "title":"Cuidado Preventivo",
+            "description": "Anticipa problemas de piel e identifica áreas de preocupación antes de que se conviertan en problemas mayores."
+          }
+        ],
+        "Diagnostic":{
+          "title": "Análisis Facial con Inteligencia Artificial",
+          "description": "Nuestro Análisis Facial IA analiza más de 8 problemas de la piel como:",
+          "imperfections": [
+            "Espinillas",
+            "Acné",
+            "Arrugas",
+            "Bolsas de Ojos",
+            "Rojeces ",
+            "Poros",
+            "Parpado Inferior Caído",
+            "Parpado Superior Caído."
+          ],
+          "button": "DIAGNÓSTICO DE PIEL",
+        }
       }
     }
 }

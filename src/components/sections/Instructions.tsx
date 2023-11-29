@@ -1,14 +1,8 @@
 import { config } from '../../api/apiConfig';
+import { instruction } from '../../types';
 import styles from './../../styles/Sections.module.css'
 
-interface instruction {
-  urlIcon: string,
-  description: string,
-  iconName: string
-}
-
 const Instructions = () => {
-  console.log('config.VIEWS.home.Instructions::', config.VIEWS.home.Instructions)
   return (
     <div className={styles.sections}>
       <h1>Instrucciones</h1>

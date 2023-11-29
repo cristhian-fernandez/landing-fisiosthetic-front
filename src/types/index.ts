@@ -80,3 +80,8 @@ export interface IconProps {
   translateY?: number;
   style?: any;
 }
+export interface instruction {
+  urlIcon: string,
+  description: string,
+  iconName: string
+}

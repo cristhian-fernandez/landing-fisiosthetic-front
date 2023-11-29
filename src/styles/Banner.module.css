@@ -63,11 +63,77 @@
 }
 @media only screen and (min-width: 1200px) {
   .banner{
-    /* border: 2px solid orange; */
     width: 100%;
     height: 400px;
   }
 }
 @media only screen and (min-width: 1350px) {
 
+}
+.diagnotic{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.imperfection{
+  display: flex;
+  flex-direction: row;
+  align-items: center ;
+  text-align: left;
+  width: 45%;
+  margin: 5px;
+}
+
+.imperfection span{
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.diagnostic_container .banner_description{
+  margin-bottom: 15px;
+}
+
+
+.banner.diagnostic_container{
+  height: 380px;
+}
+
+@media only screen and (min-width: 450px) {
+  .banner.diagnostic_container{
+    height: 350px;
+  }
+  .diagnotic{
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .banner.diagnostic_container{
+    justify-content: flex-end;
+    text-align: right;
+    background-image: url('./../assets/images/background_skincare.jpg');
+  }
+  .diagnostic_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .diagnotic{
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .banner.diagnostic_container{
+    height: 360px;
+  }
+  .diagnotic{
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .diagnostic_container .banner_description {
+    width: 100%;
+  }
 }
