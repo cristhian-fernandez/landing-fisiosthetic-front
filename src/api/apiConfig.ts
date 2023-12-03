@@ -11,7 +11,7 @@ export const config: any = {
         "banner" :{
           "title": "Tu Piel, Nuestra Prioridad",
           "subtitle": "Diagnóstico Facial con Inteligencia Artificial en Fisiosthetic.",
-          "description": "Sube tu Foto, deja que la magia comience. Descubre esas pequeña imperfecciones y permítenos realzar tu belleza con nuestros tratamientos personalizados",
+          "description": "Sube tu Foto, deja que la magia comience. Descubre esas pequeña imperfecciones y permítenos realzar tu belleza con nuestros tratamientos personalizados:",
           "button": "INICIAR ANÁLISIS FACIAL",
         },
         "Instructions" :[

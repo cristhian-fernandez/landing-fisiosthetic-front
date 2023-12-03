@@ -16,43 +16,105 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
       imageLoaded && onNextStep()
     }, 8000);
   }
+  // const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   const file = event.target.files && event.target.files[0];
+  //   console.log('file:::', file)
+  //   if (file) {
+  //     const formData = new FormData();
+  //     formData.append('image', file);
+  //     console.log('formData:::', formData)
+
+  //     try {
+  //       setLoading(true)
+  //       const response = await fetch('https://apirest-teachable-machine-two.vercel.app/api/image', {
+  //       // const response = await fetch('http://localhost:3001/api/image', {
+  //         method: 'POST',
+  //         body: formData,
+  //       });
+
+  //       const result = await response.json();
+  //       console.log('response:::>', response)
+  //       console.log('result:::>', result)
+
+  //       if (response && response.ok) {
+          
+  //         setDataAnalysis(result.data);
+  //         setErrorOccurred(false);
+  //         setImageLoaded(true);
+  //       } else {
+  //         setErrorOccurred(true);
+  //       }
+  //     } catch (error) {
+  //       console.error("Error uploading image:", error);
+  //       setErrorOccurred(true);
+  //     } finally {
+  //       setLoading(false)
+  //     }
+  //   }
+  // };
+
   const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files && event.target.files[0];
-    console.log('file:::', file)
+  
     if (file) {
-      const formData = new FormData();
-      formData.append('image', file);
-      console.log('formData:::', formData)
-
       try {
-        setLoading(true)
-        const response = await fetch('https://apirest-teachable-machine-two.vercel.app/api/image', {
-        // const response = await fetch('http://localhost:3001/api/image', {
-          method: 'POST',
-          body: formData,
-        });
-
-        const result = await response.json();
-        console.log('response:::>', response)
-        console.log('result:::>', result)
-
-        if (response && response.ok) {
-          
-          setDataAnalysis(result.data);
-          setErrorOccurred(false);
-          setImageLoaded(true);
-        } else {
-          setErrorOccurred(true);
-        }
+        setLoading(true);
+  
+        const image = new Image();
+        const reader = new FileReader();
+  
+        reader.onload = (e: any) => {
+          image.src = e.target.result;
+  
+          image.onload = async () => {
+            const maxWidth = 400;
+            const maxHeight = (maxWidth / image.width) * image.height;
+  
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d')!;
+  
+            canvas.width = maxWidth;
+            canvas.height = maxHeight;
+  
+            context.drawImage(image, 0, 0, maxWidth, maxHeight);
+            canvas.toBlob(async (blob) => {
+              if (blob) {
+                const resizedFormData = new FormData();
+                resizedFormData.append('image', blob, file.name);
+  
+                const response = await fetch('https://apirest-teachable-machine-two.vercel.app/api/image', {
+                  method: 'POST',
+                  body: resizedFormData,
+                });
+  
+                const result = await response.json();
+  
+                if (response.ok) {
+                  setDataAnalysis(result.data);
+                  setErrorOccurred(false);
+                  setImageLoaded(true);
+                } else {
+                  setErrorOccurred(true);
+                }
+                setLoading(false);
+              } else {
+                console.error('Error al redimensionar la imagen');
+                setErrorOccurred(true);
+                setLoading(false);
+              }
+            }, 'image/jpeg', 0.9);
+          };
+        };
+  
+        reader.readAsDataURL(file);
       } catch (error) {
         console.error("Error uploading image:", error);
         setErrorOccurred(true);
-      } finally {
-        setLoading(false)
+        setLoading(false);
       }
     }
   };
-
+  
   return (
     <div>
       <p className={styles.title}>Prepárate para empezar el análisis de piel</p>
