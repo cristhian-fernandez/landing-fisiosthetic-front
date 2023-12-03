@@ -173,3 +173,13 @@
   }
 }
 
+.show_treatment_content{
+  margin-bottom: 25px;
+}
+.show_treatment_title{
+  margin-bottom: 10px;
+}
+.show_treatment_item{
+  font-size: 14px;
+}
+

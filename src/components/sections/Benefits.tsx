@@ -15,7 +15,7 @@ const Benefits = () => {
         {
           config.VIEWS.home.Benefits.map((benefit:Benefit) => {
             return(
-              <div className={styles.benefit}>     
+              <div className={styles.benefit} key={benefit.title}>     
                 <div className={styles.benefits_title}>
                   <span><CheckCircle fill='var(--first-color)'/></span>
                   <p>{benefit.title}</p>

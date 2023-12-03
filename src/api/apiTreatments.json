@@ -3,25 +3,137 @@
       "treatments": [
           {
               "idTreatment": 1,
-              "name": "peelings_quimicos",
-              "fullName": "Peelings Químicos",
+              "name": "toxina_botulinica",
+              "fullName": "Toxina Botulínica (Botox)",
               "urlImagen": "",
-              "description": "",
+              "description": " Ideal para suavizar las arrugas dinámicas causadas por movimientos musculares repetitivos, como las líneas de expresión.",
               "active": true
           },
           {
               "idTreatment": 2,
-              "name": "Manchas",
-              "fullName": "Manchas",
-              "description": "",
+              "name": "rellenos_acido_hialuronico",
+              "fullName": "Rellenos con Ácido Hialurónico",
+              "description": "Ayudan a rellenar y suavizar las arrugas, proporcionando volumen y firmeza.",
               "urlImagen": "",
               "active": true
           },
           {
               "idTreatment": 3,
-              "name": "Arrugas",
-              "fullName": "Arrugas",
+              "name": "bioestimuladores_colageno",
+              "fullName": "Bioestimuladores de Colágeno",
+              "description": "Estimulan la producción natural de colágeno, mejorando la elasticidad y firmeza de la piel.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 4,
+              "name": "mesolifting",
+              "fullName": "Mesolifting",
+              "description": "Inyección de sustancias revitalizantes para mejorar la textura y apariencia de la piel.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 5,
+              "name": "hilos_tensores",
+              "fullName": "Hilos Tensores",
+              "description": "Ayudan a tensar y elevar la piel, reduciendo la flacidez.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 6,
+              "name": "armonización_facial",
+              "fullName": "Armonización Facial 360°",
+              "description": "Un enfoque integral para mejorar la apariencia facial, abordando diferentes áreas.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 7,
+              "name": "peeling_quimico",
+              "fullName": "Peeling Químico",
+              "description": "Exfoliación química para mejorar la textura y reducir las arrugas finas.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 8,
+              "name": "laser_fraccionado",
+              "fullName": "Laser CO2 Fraccionado",
+              "description": "Estimula la producción de colágeno y mejora la textura de la piel.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 9,
+              "name": "sueros_ozonizados",
+              "fullName": "Sueros Ozonizados",
+              "description": "Contribuyen a la oxigenación y regeneración celular.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 10,
+              "name": "vitamina_endovenosa",
+              "fullName": "Vitamina C Endovenosa",
+              "description": "Antioxidante que puede mejorar la salud de la piel.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 11,
+              "name": "glutation",
+              "fullName": "Glutatión",
+              "description": "Antioxidante con beneficios para la piel.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 12,
+              "name": "ozonoterapia",
+              "fullName": "Ozonoterapia",
+              "description": "Puede mejorar la circulación y estimular la regeneración celular.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 13,
+              "name": "peeling_diamantes",
+              "fullName": "Peeling de Diamantes y Peeling Ultrasónico",
+              "description": "Exfoliación para mejorar la textura de la piel y eliminar impurezas.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 14,
+              "name": "lifting_radiofrecuencia",
+              "fullName": "Lifting con Radiofrecuencia Fraccionada y HIFU",
               "description": "",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 15,
+              "name": "mesoterapia_dermapen",
+              "fullName": "Mesoterapia con Dermapen",
+              "description": "Sustancias rejuvenecedoras que abordar problemas de pigmentación.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 16,
+              "name": "plasma_rico_plaquetas",
+              "fullName": "Plasma Rico en Plaquetas (PRP)",
+              "description": "Utiliza factores de crecimiento para mejorar la apariencia de la piel.",
+              "urlImagen": "",
+              "active": true
+          },
+          {
+              "idTreatment": 17,
+              "name": "facial_antiacne",
+              "fullName": "Facial Antiacné",
+              "description": "Específicamente diseñado para tratar el acné y mejorar la condición de la piel afectada.",
               "urlImagen": "",
               "active": true
           }

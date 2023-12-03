@@ -10,7 +10,7 @@ const Instructions = () => {
         {
           config.VIEWS.home.Instructions.map((instruction:instruction) => {
             return(
-              <div className={styles.instruction}>
+              <div className={styles.instruction} key={instruction.iconName}>
                 <img src={instruction.urlIcon} alt={instruction.iconName} />
                 <p>{instruction.description}</p>
               </div>

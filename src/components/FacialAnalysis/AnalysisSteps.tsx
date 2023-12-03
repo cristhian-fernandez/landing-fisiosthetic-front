@@ -18,10 +18,11 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
   }
   const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files && event.target.files[0];
-
+    console.log('file:::', file)
     if (file) {
       const formData = new FormData();
       formData.append('image', file);
+      console.log('formData:::', formData)
 
       try {
         setLoading(true)
@@ -31,10 +32,12 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
           body: formData,
         });
 
+        const result = await response.json();
         console.log('response:::>', response)
+        console.log('result:::>', result)
 
         if (response && response.ok) {
-          const result = await response.json();
+          
           setDataAnalysis(result.data);
           setErrorOccurred(false);
           setImageLoaded(true);
@@ -52,7 +55,7 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
 
   return (
     <div>
-      <p className={styles.title}>Prepárate para empezar el análisis de piel::</p>
+      <p className={styles.title}>Prepárate para empezar el análisis de piel</p>
       <p className={styles.subtitle}>Instrucciones para subir tu foto</p>
       <div className={styles.steps}>
         <div className={styles.step_list}>
