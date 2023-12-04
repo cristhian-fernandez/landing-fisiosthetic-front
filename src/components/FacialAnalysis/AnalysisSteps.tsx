@@ -16,43 +16,7 @@ const AnalysisSteps: React.FC<AnalysisStepsProps> = ({ onNextStep, setDataAnalys
       imageLoaded && onNextStep()
     }, 8000);
   }
-  // const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   const file = event.target.files && event.target.files[0];
-  //   console.log('file:::', file)
-  //   if (file) {
-  //     const formData = new FormData();
-  //     formData.append('image', file);
-  //     console.log('formData:::', formData)
-
-  //     try {
-  //       setLoading(true)
-  //       const response = await fetch('https://apirest-teachable-machine-two.vercel.app/api/image', {
-  //       // const response = await fetch('http://localhost:3001/api/image', {
-  //         method: 'POST',
-  //         body: formData,
-  //       });
-
-  //       const result = await response.json();
-  //       console.log('response:::>', response)
-  //       console.log('result:::>', result)
-
-  //       if (response && response.ok) {
-          
-  //         setDataAnalysis(result.data);
-  //         setErrorOccurred(false);
-  //         setImageLoaded(true);
-  //       } else {
-  //         setErrorOccurred(true);
-  //       }
-  //     } catch (error) {
-  //       console.error("Error uploading image:", error);
-  //       setErrorOccurred(true);
-  //     } finally {
-  //       setLoading(false)
-  //     }
-  //   }
-  // };
-
+  
   const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files && event.target.files[0];
   

@@ -245,3 +245,29 @@ input {
 .CircularProgressbar{
   width: 50px;
 }
+
+.pdf_discount_title{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--second-color-dark);
+  margin-bottom: 6px;
+}
+
+.pdf_discount_item{
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.pdf_discount_item::before {
+  content: '\2022';
+  color: var(--second-color-dark); 
+  display: inline-block;
+  width: 6px; 
+  margin-right: 6px; 
+}
+
+.pdf_discount_image{
+  width: 100%;
+  margin-bottom: 10px;
+}

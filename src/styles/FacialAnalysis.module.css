@@ -110,12 +110,22 @@
   text-align: right;
 }
 
-.button_contact{
+.button_result{
   width: 100%;
   text-align: center;
 }
 
+.button_contact{
+  margin-bottom: 15px;
+}
 
+.button_downloadPDF{
+  background-color: var(--second-color);
+}
+
+.button_downloadPDF:hover{
+  background-color: var(--second-color-dark);
+}
 
 @media only screen and (min-width: 650px) {
   /* .analysis_image{
@@ -183,3 +193,6 @@
   font-size: 14px;
 }
 
+.show_treatment_section{
+  margin-bottom: 5px;
+}
